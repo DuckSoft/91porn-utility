@@ -1,4 +1,8 @@
 # 91porn-utility
+![license:mit](https://img.shields.io/github/license/DuckSoft/91porn-utility.svg?logo=github&style=plastic&logoColor=white)
+![github:stars](https://img.shields.io/github/stars/DuckSoft/91porn-utility.svg?logo=github&style=plastic&logoColor=white)
+[![github:downloads](https://img.shields.io/github/downloads/DuckSoft/91porn-utility/total.svg?logo=github&style=plastic&logoColor=white)](https://github.com/DuckSoft/91porn-utility/releases)
+
 ## 安装说明
 这是个油猴脚本，直接安装启用即可。
 
@@ -14,3 +18,4 @@
 若你不是VIP，可点击“VIP”按钮来破解激活VIP视频观看（可看高清）、搜索（冷却从10分钟减到10s）权限，破解后如图：
 > ![image2](https://user-images.githubusercontent.com/7822648/49384406-e28d6c00-f755-11e8-92ca-6c5af316546f.png)
 
+ 
