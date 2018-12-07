@@ -19,9 +19,9 @@ export class HDVideoWidget implements Widget {
         let isHD = HDVideoWidget.isAlreadyHD();
         let hasHD = HDVideoWidget.hasHD();
 
-        let disabled: string = (isHD || !(isHD || hasHD)) ? `disabled="disabled"` : "";
+        let disabled: string = (isHD || !(isHD || hasHD)) ? ` disabled="disabled"` : "";
         let statusText: string = isHD ? "已为高清" : !isHD && hasHD ? "转到高清" : "暂无高清";
-        return `<button id="toggleHD" disabled=${disabled}>${statusText}</button>`;
+        return `<button id="toggleHD" ${disabled}>${statusText}</button>`;
     }
 
     mount() {
