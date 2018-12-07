@@ -18,21 +18,21 @@ import {WatchCountWidget} from "./widget/WatchCountWidget";
 import {removeAds} from "./util/SanityHelper";
 
 let trigger = () => {
-    let injector = new WidgetInjector([
-        new LoggedInWidget(),
-        new VipWidget(),
-        new HDVideoWidget(),
-        new VideoAddressWidget(),
-        new WatchCountWidget(),
-    ], "ducksoft_helper");
+  let injector = new WidgetInjector([
+    new LoggedInWidget(),
+    new VipWidget(),
+    new HDVideoWidget(),
+    new VideoAddressWidget(),
+    new WatchCountWidget(),
+  ], "ducksoft_helper");
 
-    injector.inject(document.body);
+  injector.inject(document.body);
 };
 
 window.addEventListener("load", trigger, false);
 window.setTimeout(removeAds);
 
 document.body.addEventListener("dblclick", () => {
-    removeAds();
-    trigger();
+  removeAds();
+  trigger();
 });
