@@ -17,14 +17,12 @@ export class VideoAddressWidget implements Widget {
         let hasVideo = !!VideoAddressWidget.fetchVideoElement();
         let disabled = hasVideo || 'disabled="disabled"';
         let statusText = hasVideo && "直接下载" || "无法下载";
-        if (hasVideo) {
-            return `<button id="fetch_address" ${disabled}>${statusText}</button>`;
-        }
 
+        return `<button id="fetch_address" ${disabled}>${statusText}</button>`;
     }
 
     mount() {
-        document.querySelector("#fetch_address").addEventListener("click", () => {
+        document.getElementById("fetch_address").addEventListener("click", () => {
             console.log("Clicked");
             let videoAddress = VideoAddressWidget.fetchVideoAddress();
             if (videoAddress) {

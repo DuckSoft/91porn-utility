@@ -25,7 +25,7 @@ export class HDVideoWidget implements Widget {
     }
 
     mount() {
-        document.querySelector("#toggleHD").addEventListener("click", () => {
+        document.getElementById("toggleHD").addEventListener("click", () => {
             if (HDVideoWidget.hasHD()) {
                 let hdURL = HDVideoWidget.fetchHDVideoURL();
                 if (hdURL) {
