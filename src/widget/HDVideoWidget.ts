@@ -2,7 +2,7 @@ import {Widget} from "./Widget";
 
 export class HDVideoWidget implements Widget {
     static isAlreadyHD() {
-        return window.location.href.indexOf("view_video_hd.php") !== -1;
+        return window.location.href.includes("view_video_hd.php");
     }
 
     static hasHD(): boolean {
