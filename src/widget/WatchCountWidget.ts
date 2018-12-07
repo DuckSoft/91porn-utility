@@ -7,7 +7,7 @@ export class WatchCountWidget implements Widget {
     }
 
     static resetWatchTimes() {
-        setCookieItem("watch_times", String(0));
+        setCookieItem("watch_count", String(0));
     }
 
     render() {
