@@ -35,15 +35,17 @@ export class VipWidget implements Widget {
     }
 
     mount() {
-        document.querySelector("#toggleVip").addEventListener("click", () => {
-            if (!VipWidget.isVip()) {
-                VipWidget.setVip(true);
-            } else if (confirm("您当前处于 VIP 用户身份。确定要解除 VIP 吗？")) {
-                VipWidget.setVip(false);
-            } else {
-                return;
-            }
-            history.go(0);
-        })
+        if (LoggedInWidget.isLoggedIn()) {
+            document.getElementById("toggleVip").addEventListener("click", () => {
+                if (!VipWidget.isVip()) {
+                    VipWidget.setVip(true);
+                } else if (confirm("您当前处于 VIP 用户身份。确定要解除 VIP 吗？")) {
+                    VipWidget.setVip(false);
+                } else {
+                    return;
+                }
+                history.go(0);
+            })
+        }
     }
 }

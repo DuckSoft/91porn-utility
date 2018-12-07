@@ -11,11 +11,11 @@ export class WatchCountWidget implements Widget {
     }
 
     render() {
-        return `<button id="watch_count">观看次数：${WatchCountWidget.watchTime}</button>`
+        return `<button id="watchCount">观看次数：${WatchCountWidget.watchTime}</button>`
     }
 
     mount() {
-        document.querySelector("#watch_count").addEventListener("click", () => {
+        document.getElementById("watchCount").addEventListener("click", () => {
             WatchCountWidget.resetWatchTimes();
             history.go(0);
         })

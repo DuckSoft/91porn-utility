@@ -2,7 +2,7 @@ import {Widget} from "./Widget";
 
 export class HDVideoWidget implements Widget {
     static isAlreadyHD() {
-        return window.location.href.indexOf("view_video_hd.php") !== -1;
+        return window.location.href.includes("view_video_hd.php");
     }
 
     static hasHD(): boolean {
@@ -19,13 +19,13 @@ export class HDVideoWidget implements Widget {
         let isHD = HDVideoWidget.isAlreadyHD();
         let hasHD = HDVideoWidget.hasHD();
 
-        let disabled: string = (isHD || !(isHD || hasHD)) ? `disabled="disabled"` : "";
+        let disabled: string = (isHD || !(isHD || hasHD)) ? ` disabled="disabled"` : "";
         let statusText: string = isHD ? "已为高清" : !isHD && hasHD ? "转到高清" : "暂无高清";
-        return `<button id="toggleHD" disabled=${disabled}>${statusText}</button>`;
+        return `<button id="toggleHD" ${disabled}>${statusText}</button>`;
     }
 
     mount() {
-        document.querySelector("#toggleHD").addEventListener("click", () => {
+        document.getElementById("toggleHD").addEventListener("click", () => {
             if (HDVideoWidget.hasHD()) {
                 let hdURL = HDVideoWidget.fetchHDVideoURL();
                 if (hdURL) {

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         91Porn Utility
 // @namespace    http://github.com/DuckSoft/
-// @version      1.0
+// @version      2.1
 // @description  Not only the addresses!
 // @author       DuckSoft
 // @match        *://*.91porn.com/*
