@@ -1,0 +1,19 @@
+{
+  "name": "91porn-utility",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/DuckSoft/91porn-utility",
+  "author": "DuckSoft <ducksoft@foxmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.2"
+  },
+  "scripts": {
+    "build-js": "tsc",
+    "build-dist": "webpack --mode=production --output-filename=91porn-util.user.js --optimize-minimize"
+  }
+}
