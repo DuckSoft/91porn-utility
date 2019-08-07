@@ -3,6 +3,8 @@
 ![github:stars](https://img.shields.io/github/stars/DuckSoft/91porn-utility.svg?logo=github&style=plastic&logoColor=white)
 [![github:downloads](https://img.shields.io/github/downloads/DuckSoft/91porn-utility/total.svg?logo=github&style=plastic&logoColor=white)](https://github.com/DuckSoft/91porn-utility/releases)
 
+> 2019/8/8：由于 91porn 修复了相关 BUG，破解 VIP 功能失效，但双击去广告功能依然可用。
+
 ## 安装说明
 这是个油猴脚本，直接安装启用即可。
 
